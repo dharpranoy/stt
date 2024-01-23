@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Small Town Talks</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+  <script src='https://smtpjs.com/v3/smtp.js'></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src='./assets/js/contact.js'></script>
+  <link rel='stylesheet' href='./style.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--
+
+TemplateMo 565 Small Town Talks
+
+https://templatemo.com/tm-565-onix-digital
+
+-->
+</head>
+<style>
+  /* p,a,h1,h2,h3,h4 {
+	margin: 0;
+	padding: 0;
+} */
+
+  .section-team {
+    font-family: "Poppins", sans-serif;
+    padding: 80px 0;
+  }
+
+  .section-team .header-section {
+    margin-bottom: 50px;
+  }
+
+  .col-lg-12>fieldset>input {
+    color: black;
+  }
+
+  .section-team .header-section .small-title {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3e64ff;
+  }
+
+  .section-team .header-section .title {
+    font-weight: 700;
+    font-size: 45px;
+  }
+
+  .section-team .single-person {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #f6f9ff;
+    border-radius: 5px;
+  }
+
+  .section-team .single-person:hover {
+    background: linear-gradient(to right, #016cec, #00b5f7);
+  }
+
+  .section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+  }
+
+  .section-team .single-person:hover .person-image {
+    padding: 12px;
+    border: 4px dashed #fff;
+  }
+
+  .section-team .single-person .person-image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .section-team .single-person .person-image .icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: linear-gradient(to right, #016cec, #00b5f7);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+  }
+
+  .section-team .single-person:hover .person-image .icon {
+    background: none;
+    background-color: #fff;
+    color: #016cec;
+  }
+
+  .section-team .single-person .person-info .full-name {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #016cec;
+  }
+
+  .section-team .single-person:hover .full-name,
+  .section-team .single-person:hover .speciality {
+    color: #fff;
+  }
+
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+
+  .slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+
+  .slider .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  }
+
+  #carouselExampleControls {
+    padding: 2rem;
+    margin: 2rem;
+  }
+</style>
+
+<body>
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/stt-logo.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="./index.html">Home</a></li>
+              <li class="scroll-to-section"><a href="./about-us.html">About Us</a></li>
+              <li class="scroll-to-section"><a href="./contact.html">Contact Us</a></li>
+              <li class="scroll-to-section"><a href="./career.html">Careers</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button-hover"><a href="./contact.html">Get in
+                    touch</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner mb-4">
+      <div class="carousel-item">
+        <div class="page-header min-vh-75 m-3 border-radius-xl"
+          style="background-image: url('https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-3-min.jpg');">
+          <span class="mask bg-gradient-dark"></span>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 my-auto">
+                <h4 class="text-white mb-0 fadeIn1 fadeInBottom">Pricing Plans</h4>
+                <h1 class="text-white fadeIn2 fadeInBottom">Work with the rockets</h1>
+                <p class="lead text-white opacity-8 fadeIn3 fadeInBottom">Wealth creation is an evolutionarily recent
+                  positive-sum game. Status is an old zero-sum game. Those attacking wealth creation are often just
+                  seeking status.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="carousel-item">
+        <div class="page-header min-vh-75 m-3 border-radius-xl"
+          style="background-image: url('https://demos.creative-tim.com/test/material-dashboard-pro/assets/img/products/product-1-min.jpg');">
+          <span class="mask bg-gradient-dark"></span>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 my-auto">
+                <h4 class="text-white mb-0 fadeIn1 fadeInBottom">Our Team</h4>
+                <h1 class="text-white fadeIn2 fadeInBottom">Work with the best</h1>
+                <p class="lead text-white opacity-8 fadeIn3 fadeInBottom">Free people make free choices. Free choices
+                  mean you get unequal outcomes. You can have freedom, or you can have equal outcomes. You can’t have
+                  both.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+      <div id="contact" class="contact-us section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="section-heading">
+                <h2>Get In Touch With Us</h2>
+                <div id="map">
+                  <iframe src="https://maps.google.com/maps?q=small town talks&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div class="info">
+                  <span><i class="fa fa-phone"></i> <a href="#">99330 93449<br> 86370 08280</a></span>
+                  <span><i class="fa fa-envelope"></i> <a
+                      href="#">contact@smalltowntalks.com<br>supriyo@smalltowntalks.com</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 align-self-center">
+              <form id="contact" action="" method="get">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input id="name" type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input id="surname" type="surname" name="surname" id="surname" placeholder="Surname"
+                        autocomplete="on" required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input id="email" type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                        placeholder="Your Email" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input id="bodytext" type="text" name="website" id="website" placeholder="Your Website URL"
+                        required>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="carrer-button">Submit Request</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!--<div class="contact-dec">
+        <img src="assets/images/contact-dec.png" alt="">
+      </div>
+      <div class="contact-left-dec">
+        <img src="assets/images/contact-left-dec.png" alt="">
+      </div>-->
+      </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+      // Acc
+      const listItems = document.querySelectorAll('.nav li');
+
+      // Add click event listener to each list item
+      listItems.forEach(item => {
+        item.addEventListener('click', function () {
+          // Remove 'active' class from all list items
+          listItems.forEach(li => {
+            li.classList.remove('active');
+          });
+
+          // Add 'active' class to the clicked list item
+          this.classList.add('active');
+        });
+      });
+
+
+
+    </script>
+
+</body>
+
+</html>

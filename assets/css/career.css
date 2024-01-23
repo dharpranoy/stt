@@ -1,0 +1,204 @@
+.custom-select {
+    width: 80%;
+    border: 1px solid #ccc;
+  padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #283747;
+  border-radius: 1.3rem; 
+  border: none;
+}
+.custom-select > p {
+    text-align: justify;
+    color: grey;
+}
+@media screen and (max-width: 768px) {
+  .custom-select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .custom-select {
+    padding: 10px;
+    border-radius: 0.8rem;
+  }
+}
+.custom-banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 236px 0px 130px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.custom-banner:after {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/wepik-export-20230619175038HqZP.jpeg);
+  background-repeat: repeat-y;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%; 
+  height: 1032px;
+}
+
+
+.custom-banner:before {
+  content: '';
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/hiring-alert.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 520px;
+  height: 354px;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .custom-banner:after() {
+        top: 80px;
+        width: 20px;
+        height: 54px;
+
+    }  
+
+}
+
+@media screen and (max-width: 480px) {
+   .custom-banner:after() {
+        top: 80px;
+        width: 20px;
+        height: 54px;
+
+    } 
+}
+.custom-banner .item {
+  margin-right: 45px;
+}
+
+.custom-banner .item h6 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ff695f;
+  margin-bottom: 15px;
+}
+
+.custom-banner .item h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #2a2a2a;
+  line-height: 72px;
+}
+
+.custom-banner .item h2 em {
+  color: #03a4ed;
+  font-style: normal;
+}
+
+.custom-banner .item h2 span {
+  color: #ff695f;
+}
+
+.custom-banner .item p {
+  margin: 20px 0px;
+}
+
+.custom-banner .item .down-buttons {
+  display: inline-flex;
+}
+
+.custom-banner .item .down-buttons .call-button i {
+  margin-right: 5px;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  border-radius: 50%;
+  background: rgb(255,104,95);
+  background: linear-gradient(105deg, rgba(255,104,95,1) 0%, rgba(255,144,104,1) 100%);
+  color: #fff;
+  font-size: 20px;
+}
+
+.custom-banner .item .down-buttons .call-button a {
+  color: #ff695f;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.custom-banner .owl-dots {
+  margin-top: 60px;
+  counter-reset: dots;
+}
+
+.custom-banner .owl-dot:before {
+  counter-increment:dots;
+  content: counter(dots);
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 10px;
+  color: #2a2a2a;
+  width: 15px;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  transition: all .5s;
+}
+
+.custom-banner .active:before {
+  color: #ff685f;
+  border-bottom: 3px solid #ff685f;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
+  z-index: 50;
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text>h1 {
+    font-family:monospace;
+    font-weight: 1000;
+    color: white;
+
+}
+
+@media screen and (max-width: 768px) {
+  .hero-text {
+    font-size: 24px;
+  }
+
+  .hero-text > h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    top: 40%;
+  }
+}
+
+

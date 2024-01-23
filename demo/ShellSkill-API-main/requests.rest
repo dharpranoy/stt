@@ -1,0 +1,54 @@
+GET http://localhost:4000/api/v1/oauth/google/token HTTP/1.1
+content-type: application/json
+
+{
+    "refresh_token": "1//0gn5ZaLXuYmTeCgYIARAAGBASNwF-L9IrqKo8NMoBIgYDQvtDSLniZRA9LTSvxv5TgibsKyK3YDSCeTAcItJXS3ICFmetK_bD8hs"
+}
+
+###
+
+GET https://api.openweathermap.org/geo/1.0/direct?q=Maithan&limit=3&appid=2d2ede340e978a7f59dde865699a4c29 HTTP/1.1
+
+###
+
+GET http://localhost:4000/api/v1/util/geocoding?query=Maithon,Dhanbad HTTP/1.1
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQzN2FhNTA0MzgxMjkzN2ZlNDM5NjBjYTNjZjBlMjI4NGI2ZmMzNGQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI0MjQ3MTk2OTE3OTYtMjV2bWZlYWJzamF0MXA0MXI5NGNibXJhMTBxYW1xNjAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0MjQ3MTk2OTE3OTYtMjV2bWZlYWJzamF0MXA0MXI5NGNibXJhMTBxYW1xNjAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDI5MzQyMzI1Mjc3NjE1NzIwOTkiLCJlbWFpbCI6ImJhbm9tYWxpcGFuZGl0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiUGxZd2dmUUdJRUc5TUpxWkxDZVRXZyIsImlhdCI6MTY3Mzk0NDU5MCwiZXhwIjoxNjczOTQ4MTkwfQ.JCZ6HYq7KYjXWK8A_gKWeREyVPUtHiytbyaTz29c0ps-9cUOM1dofeJ_Di3JAn53Ua9mX_Z35fBAIUveFSkoOWQhKQhPBovDlNnkQvj0u_PMK3RX_BgyjzHtAd6TcVTp9xWea-BSE1pMH0RRFHSWa6jmK3nGqsh5BNbAPRPNbb3epdDjugaGaxRIiB3T5SSJSupLZtw58MZdv9rhNYyNJLTGJadbXC5DeLOwgQvyXso7nknXDOK6RBfAs9eRO8aG2zONk0gNzU39m84GEj0aWzmzLI8Ea7tkgg5ZNJTsHIeqBb9ndT1mvg9aZcx6rH2VG3euljER40XzdsEZVQHDow
+
+###
+
+POST http://localhost:4000/api/v1/profile/creator-application HTTP/1.1
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQzN2FhNTA0MzgxMjkzN2ZlNDM5NjBjYTNjZjBlMjI4NGI2ZmMzNGQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI0MjQ3MTk2OTE3OTYtMjV2bWZlYWJzamF0MXA0MXI5NGNibXJhMTBxYW1xNjAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0MjQ3MTk2OTE3OTYtMjV2bWZlYWJzamF0MXA0MXI5NGNibXJhMTBxYW1xNjAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDI5MzQyMzI1Mjc3NjE1NzIwOTkiLCJlbWFpbCI6ImJhbm9tYWxpcGFuZGl0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiZUhadmEtMFY2b2RDY3RyZ1c2SFZVZyIsIm5hbWUiOiJKYXlhbnRhIFBhbmRpdCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA0bGtFbXlnNlhKU3NxbC1KWGMtT3FSczRpV2tkY0RLUGJNTktENUx3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkpheWFudGEiLCJmYW1pbHlfbmFtZSI6IlBhbmRpdCIsImxvY2FsZSI6ImVuIiwiaWF0IjoxNjc0MDM4Nzc3LCJleHAiOjE2NzQwNDIzNzd9.j4iSUzw7FEdJjRTM1Tj2YbcjNETpvpVP7b67SEPS2iaPtRLSTS7tJW5k7mKq_dG2o3Gm5FsiheZb6tEeHOdVWudJrN2JNpV_NKLYVk1JZ4J1hzDVF5iUozl3BzU-6nHjjOPWy6_ZpJAQQKOwxTuIfXPFXM69omPboPwyhRKlgH4PgFa755HuFWnHHe9_-zLj7NKXH8jPz0H6szV8z2ASQfsBHD8OvMl4NZ9h7mNXDWJDa1r3A2P6mzvePPlL7wkTBsqbxFFPaUt86PGipayq-M03VVoGpeGT8haFhcoD2_TsSsBwsKUQdJmu4OSoKCpLHBd9at3LYE7iPWoyJj66bw
+Content-Type: application/json
+
+{
+    "kyc_type": "Aadhaar Card",
+    "kyc_link": "https://static01.nyt.com/images/2022/01/31/crosswords/31meme-wordplay/31meme-wordplay-mediumSquareAt3X.png",
+    "kyc_address": {
+        "addr1": "Qtr. No. G-3-B, Area 5",
+        "addr2": "Maithon",
+        "city": "Dhanbad",
+        "province": "Jharkhand",
+        "zip": "828207",
+        "country": "India"
+    },
+    "coordinates": {
+        "lat": 23.771917,
+        "long": 86.804847
+    },
+    "specialisations": [
+        "graphic designer",
+        "Web SEO",
+        "Science Tutoring"
+    ]
+}
+
+###
+
+GET http://localhost:4000/api/v1/search?lat=23.771917&long=86.804847&query=graphic%20designer HTTP/1.1
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQzN2FhNTA0MzgxMjkzN2ZlNDM5NjBjYTNjZjBlMjI4NGI2ZmMzNGQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI0MjQ3MTk2OTE3OTYtMjV2bWZlYWJzamF0MXA0MXI5NGNibXJhMTBxYW1xNjAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0MjQ3MTk2OTE3OTYtMjV2bWZlYWJzamF0MXA0MXI5NGNibXJhMTBxYW1xNjAuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDI5MzQyMzI1Mjc3NjE1NzIwOTkiLCJlbWFpbCI6ImJhbm9tYWxpcGFuZGl0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiZUhadmEtMFY2b2RDY3RyZ1c2SFZVZyIsIm5hbWUiOiJKYXlhbnRhIFBhbmRpdCIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BRWRGVHA0bGtFbXlnNlhKU3NxbC1KWGMtT3FSczRpV2tkY0RLUGJNTktENUx3PXM5Ni1jIiwiZ2l2ZW5fbmFtZSI6IkpheWFudGEiLCJmYW1pbHlfbmFtZSI6IlBhbmRpdCIsImxvY2FsZSI6ImVuIiwiaWF0IjoxNjc0MDM4Nzc3LCJleHAiOjE2NzQwNDIzNzd9.j4iSUzw7FEdJjRTM1Tj2YbcjNETpvpVP7b67SEPS2iaPtRLSTS7tJW5k7mKq_dG2o3Gm5FsiheZb6tEeHOdVWudJrN2JNpV_NKLYVk1JZ4J1hzDVF5iUozl3BzU-6nHjjOPWy6_ZpJAQQKOwxTuIfXPFXM69omPboPwyhRKlgH4PgFa755HuFWnHHe9_-zLj7NKXH8jPz0H6szV8z2ASQfsBHD8OvMl4NZ9h7mNXDWJDa1r3A2P6mzvePPlL7wkTBsqbxFFPaUt86PGipayq-M03VVoGpeGT8haFhcoD2_TsSsBwsKUQdJmu4OSoKCpLHBd9at3LYE7iPWoyJj66bw
+Content-Type: application/json
+
+###
+
+GET http://localhost:4000/api/v1/util/geocoding?query=Dhanbad,Jharkhand HTTP/1.1
+

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Small Town Talks</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/career.css" rel="stylesheet">
+  <link href="netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+
+  <script src='https://smtpjs.com/v3/smtp.js'></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="./assets/js/career.js"></script>
+  <link rel='stylesheet' href='./style.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--
+
+TemplateMo 565 Small Town Talks
+
+https://templatemo.com/tm-565-onix-digital
+
+-->
+</head>
+<style>
+  /* p,a,h1,h2,h3,h4 {
+	margin: 0;
+	padding: 0;
+} */
+
+  .section-team {
+    font-family: "Poppins", sans-serif;
+    padding: 80px 0;
+  }
+
+  .section-team .header-section {
+    margin-bottom: 50px;
+  }
+
+  .col-lg-12>fieldset>input {
+    color: black;
+  }
+
+  .section-team .header-section .small-title {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3e64ff;
+  }
+
+  .section-team .header-section .title {
+    font-weight: 700;
+    font-size: 45px;
+  }
+
+  .section-team .single-person {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #f6f9ff;
+    border-radius: 5px;
+  }
+
+  .section-team .single-person:hover {
+    background: linear-gradient(to right, #016cec, #00b5f7);
+  }
+
+  .section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+  }
+
+  .section-team .single-person:hover .person-image {
+    padding: 12px;
+    border: 4px dashed #fff;
+  }
+
+  .section-team .single-person .person-image img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .section-team .single-person .person-image .icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: linear-gradient(to right, #016cec, #00b5f7);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+  }
+
+  .section-team .single-person:hover .person-image .icon {
+    background: none;
+    background-color: #fff;
+    color: #016cec;
+  }
+
+  .section-team .single-person .person-info .full-name {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #016cec;
+  }
+
+  .section-team .single-person:hover .full-name,
+  .section-team .single-person:hover .speciality {
+    color: #fff;
+  }
+
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+
+  .slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+
+  .slider .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  }
+
+  #carouselExampleControls {
+    padding: 2rem;
+    margin: 2rem;
+  }
+</style>
+
+<body>
+  <header style="position: absolute;" class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s"
+    data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/stt-logo.png">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="./index.html">Home</a></li>
+              <li class="scroll-to-section"><a href="./about-us.html">About Us</a></li>
+              <li class="scroll-to-section"><a href="./contact.html">Contact Us</a></li>
+              <li class="scroll-to-section"><a href="./career.html">Careers</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button-hover"><a href="./contact.html">Get in
+                    touch</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <div class="custom-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class=" item header-text">
+
+                <div class="hero-image">
+                  <div class="hero-text">
+                    <h1><mark>Role Open 'Artist'</mark></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="contact" class="contact-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="section-heading">
+              <h2>Work with us</h2>
+              <div class="custom-select">
+                <p>
+                  As a leading provider of digital marketing and IT solutions, we pride ourselves on delivering
+                  innovative strategies and cutting-edge technologies to help businesses thrive in the digital
+                  landscape. With a passion for excellence and a commitment to driving results, we have built a
+                  reputation for being at the forefront of our industry.
+                  By joining our team, you'll have the chance to work with a diverse group of professionals who share a
+                  common goal of delivering exceptional services to our clients. Whether you are a skilled developer, a
+                  creative artist, a talented writer, or a marketing enthusiast, we have positions that cater to a wide
+                  range of skill sets.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 align-self-center">
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input id="name" type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input id="contactNo" type="text" maxlength="10" name="contactNo" placeholder="ContactNo"
+                      autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input id="designation" type="text" name="designation" autocomplete="on" placeholder="Your Skillest"
+                      required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input id="email" type="text" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                      placeholder="Your Email" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="career-submit" class="career-button">Submit Request</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--<div class="contact-dec">
+        <img src="assets/images/contact-dec.png" alt="">
+      </div>
+      <div class="contact-left-dec">
+        <img src="assets/images/contact-left-dec.png" alt="">
+      </div>-->
+    </div>
+  </div>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  <script>
+    // Acc
+    $(document).on("click", ".naccs .menu div", function () {
+      var numberIndex = $(this).index();
+
+      if (!$(this).is("active")) {
+        $(".naccs .menu div").removeClass("active");
+        $(".naccs ul li").removeClass("active");
+
+        $(this).addClass("active");
+        $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+        var listItemHeight = $(".naccs ul")
+          .find("li:eq(" + numberIndex + ")")
+          .innerHeight();
+        $(".naccs ul").height(listItemHeight + "px");
+      }
+    });
+  </script>
+
+</body>
+
+</html>
